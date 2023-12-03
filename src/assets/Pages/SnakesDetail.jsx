@@ -10,7 +10,7 @@ function SnakesDetail (){
     return(
         <>
             <div className="border rounded-lg shadow bg-zinc-800 border-gray-700 m-5">
-                <img className="rounded-t-lg" src={data.Img}/>
+                <img className="rounded-t-lg" src={`/${data.Img}`}/>
                 <div className="p-5">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{data.MMName}</h5>
                     <p className="text-zinc-400">{data.EngName}</p>

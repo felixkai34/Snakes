@@ -13,7 +13,7 @@ function Posts() {
 		<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mx-5'>
 			{Datas.map((data) => (
 				<div key={data.Id} className="border rounded-lg shadow bg-gray-800 border-gray-700">
-					<img className="rounded-t-lg w-full aspect-square" src={(data.Img)} />
+					<img className="rounded-t-lg w-full aspect-square" src={`/${data.Img}`} />
 					<div className="p-5">
 						<h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{data.MMName}</h5>
 						<p className="mb-3 font-normal text-gray-400">{data.EngName}</p>
